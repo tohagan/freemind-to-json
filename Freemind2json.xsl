@@ -19,6 +19,7 @@
     
     <xsl:value-of select="$indent1"/>
     <xsl:text>text: "</xsl:text>
+    <!-- Need to replace " with \" in @TEXT strings -->
     <xsl:value-of disable-output-escaping='yes' select="@TEXT"/>
     <xsl:text>"</xsl:text>
     
