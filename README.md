@@ -12,9 +12,13 @@ In FreeMind ...
 1. And then select your JSON output file (typically a .js or .json file type).
 1. Press **Export** to export the file.
 
-The XSLT code supports indenting and FreeMind LINK attributes. You might find this script a good starting point for your own custom export. It's fairly easy to add additional FreeMind attributes or modify the resulting layout.
+
+You might find this script a good starting point for your own custom export. 
+It's fairly easy to add additional FreeMind attributes or modify the resulting layout.
+
+Currently LINK only attributes on *leaf nodes* of your MM tree are exported as JSON 'url' fields. 
+This suited my needs but if you don't like this just replace the `<xsl:choose>` and `<xsl:when>` 
+with `<xsl:if>` statements so the conditions are not mutually exclusive. You can also add `<xsl:if>` 
+statements for any additional FreeMind attributes you need to support.
 
 Enjoy :) 
-
-
-			
