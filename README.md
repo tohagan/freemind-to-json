@@ -1,4 +1,5 @@
-= How to export FreeMind files to JSON =
+
+## How to export FreeMind files to JSON ##
 
 This [XSLT](http://www.w3schools.com/xsl/ "XSLT") script will allow you to export [mind maps](http://en.wikipedia.org/wiki/Mind_map "mind maps") created using [FreeMind](http://freemind.sourceforge.net "FreeMind") into [JSON](http://en.wikipedia.org/wiki/JSON "JSON") format files.
 
